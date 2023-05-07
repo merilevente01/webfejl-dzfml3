@@ -1,0 +1,33 @@
+<div>
+    <select #chosenImage (change)="reload()">
+        <option value="1bahrain">1bahrain</option>
+        <option value="2saudi">2saudi</option>
+        <option value="3australia">3australia</option>
+        <option value="4azer">4azer</option>
+        <option value="5miami">5miami</option>
+        <option value="6emilio">6emilioromagna</option>
+        <option value="7monaco">7monaco</option>
+        <option value="8spain">8spain</option>
+        <option value="9canada">9canada</option>
+        <option value="10austria">10austria</option>
+        <option value="11greatbritain">11greatbritain</option>
+        <option value="12hungary">12hungary</option>
+        <option value="13belgian">13belgian</option>
+        <option value="14dutch">14dutch</option>
+        <option value="15italy">15italy</option>
+        <option value="16singapore">16singapore</option>
+        <option value="17japan">17japan</option>
+        <option value="18quatar">18quatar</option>
+        <option value="19usa">19cota</option>
+        <option value="20mexico">20mexico</option>
+        <option value="21brazil">21brazil</option>
+        <option value="22lasvegas">22lasvegas</option>
+        <option value="23abudhabi">23abudhabi</option>
+    </select>
+
+    <div class="container">
+        <img class="teamsImage" [src]="'assets/' + chosenImage.value + '.png'">
+    </div>
+
+
+</div>

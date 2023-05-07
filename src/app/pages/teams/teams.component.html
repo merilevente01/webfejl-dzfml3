@@ -1,0 +1,28 @@
+<!--<app-list [teamsObjectInput]="teamsObject" (imageObjectEmitter)="loadImage($event)"></app-list>-->
+
+
+<div>
+    <select #chosenImage (change)="reload()">
+        <option value="redbull">redbull</option>
+        <option value="mb">mb</option>
+        <option value="sf">sf</option>
+        <option value="alfa">alfa</option>
+        <option value="alpine">alpine</option>
+        <option value="aston">aston</option>
+        <option value="at">at</option>
+        <option value="haas">haas</option>
+        <option value="mclaren">mclaren</option>
+        <option value="williams">williams</option>
+    </select>
+
+    <div class="container">
+        <img class="teamsImage" [src]="'assets/' + chosenImage.value + '.jpg'">
+    </div>
+
+
+</div>
+<div>
+    <app-list></app-list>
+    <app-viewer [imageInput]="chosenImage"></app-viewer>
+    <!--<app-viewer></app-viewer>-->
+</div>

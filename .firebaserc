@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webfejl-dzfml3": {
+      "hosting": {
+        "kotprog1": [
+          "webfejl-dzfml3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webfejl-dzfml3"
+  }
+}
